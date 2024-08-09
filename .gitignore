@@ -31,3 +31,18 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+# Node Modules
+node_modules
+
+# Python Env
+pyvenv.cfg
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
