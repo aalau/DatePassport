@@ -1,7 +1,10 @@
-import { StyleSheet, Text, View, Button, Vibration } from "react-native"
+import { Platform, StyleSheet, Text, View, Button, Vibration } from "react-native"
 import { NavigationContainer } from '@react-navigation/native'
 import BigButton from "../components/BigButton"
 import SearchBar from "../components/SearchBar"
+import * as firebase from "@react-native-firebase/app";
+import Login from './Login'
+
 
 export default function Page() {
   return (
@@ -9,11 +12,7 @@ export default function Page() {
       <View style={styles.main}>
         <Text style={styles.title}>Date Passport</Text>
         <Text style={styles.subtitle}>Where are you going for your next date?</Text>
-        <SearchBar/>
-        <BigButton
-          onPress={handlePress}
-          title="Date"
-        />
+        <Login/>
       </View>
     </View>
   );
